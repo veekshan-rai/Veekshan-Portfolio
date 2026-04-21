@@ -44,6 +44,7 @@ export const projects = [
     description:
       'A personal finance management web application that helps users track income, expenses, and savings efficiently. Includes categorized transactions, real-time balance updates, and a clean dashboard UI.',
     liveUrl: '#',
+    githubUrl: 'https://github.com/veekshan-rai/Finance-Tracker',
     gradient: 'from-purple-600 to-indigo-600',
     glowColor: 'rgba(168,85,247,0.5)',
     emoji: '💰',
@@ -56,6 +57,7 @@ export const projects = [
     description:
       'A responsive food delivery web application that allows users to browse menus, view food items, and simulate ordering functionality with a user-friendly and attractive interface.',
     liveUrl: '#',
+    githubUrl: 'https://github.com/veekshan-rai/Food-delivery',
     gradient: 'from-orange-500 to-pink-600',
     glowColor: 'rgba(249,115,22,0.5)',
     emoji: '🍔',
@@ -68,6 +70,7 @@ export const projects = [
     description:
       'A modern e-commerce platform featuring product listings, smooth UI, and an automatic image carousel for an enhanced user experience.',
     liveUrl: '#',
+    githubUrl: 'https://github.com/veekshan-rai/Trend-Feet',
     gradient: 'from-cyan-500 to-blue-600',
     glowColor: 'rgba(34,211,238,0.5)',
     emoji: '👟',
@@ -80,6 +83,7 @@ export const projects = [
     description:
       'A responsive web application that provides cooking instructions and ingredient details using API integration, designed for simplicity and usability.',
     liveUrl: '#',
+    githubUrl: 'https://github.com/veekshan-rai/Recipe-Book',
     gradient: 'from-green-500 to-teal-600',
     glowColor: 'rgba(34,197,94,0.5)',
     emoji: '🍳',

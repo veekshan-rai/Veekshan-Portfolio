@@ -111,7 +111,6 @@ const Home = () => {
                 style={{ fontSize: 'clamp(2.4rem, 5.5vw, 4.2rem)' }}
               >
                 Hi, I'm{' '}
-                <br className="sm:hidden" />
                 <span className="gradient-text">
                   {personalInfo.name}
                 </span>

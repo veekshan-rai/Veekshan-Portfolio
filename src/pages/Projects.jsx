@@ -3,7 +3,7 @@
    ===================================================== */
 import { useState, useRef } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
-import { FiExternalLink, FiCode, FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import { FiExternalLink, FiCode, FiChevronDown, FiChevronUp, FiGithub } from 'react-icons/fi';
 import { projects } from '../data/portfolio';
 import { useMousePosition } from '../hooks/useMousePosition';
 
@@ -107,19 +107,24 @@ const ProjectNode = ({ project, index, isLeft, isExpanded, onToggle }) => {
             >
               <div className="mt-4 pt-4" style={{ borderTop: '1px solid rgba(168,85,247,0.15)' }}>
                 <p className="text-slate-300 text-sm leading-relaxed mb-4">{project.description}</p>
-                <motion.a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  whileHover={{ scale: 1.04 }}
-                  whileTap={{ scale: 0.96 }}
-                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-white bg-gradient-to-r ${project.gradient}`}
-                  style={{ boxShadow: `0 0 20px ${glow}` }}
-                >
-                  <FiExternalLink size={13} />
-                  View Project
-                </motion.a>
+                <div className="flex items-center gap-3">
+
+                  {project.githubUrl && (
+                    <motion.a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      whileHover={{ scale: 1.04 }}
+                      whileTap={{ scale: 0.96 }}
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-slate-200"
+                      style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
+                    >
+                      <FiGithub size={13} />
+                      GitHub Link
+                    </motion.a>
+                  )}
+                </div>
               </div>
             </motion.div>
           )}
