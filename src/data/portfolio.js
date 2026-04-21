@@ -29,7 +29,7 @@ export const education = [
     duration: 'Completed: 2022',
     grade: 'Percentage: 78%',
     description:
-      'Completed pre-university education with a strong foundation in Mathematics, Physics, Electronics, and Computer Science.',
+      'Completed pre-university education with a strong foundation in Computer Science.',
     icon: '🏫',
     color: 'cyan',
   },
